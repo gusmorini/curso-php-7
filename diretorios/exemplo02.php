@@ -18,6 +18,9 @@ foreach($images as $img)
 
        //data da modificação
        $info["modified"] = date("d/m/Y H:i:s", fileatime($filename));
+
+       //url de acesso
+       $info["url"] = "http://localhost:3000/".$filename;
         
        array_push($data, $info);
        
