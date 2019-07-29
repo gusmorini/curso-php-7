@@ -29,4 +29,5 @@ foreach($images as $img)
     }
 }
 
+//converte o array para json e mostra na tela
 echo json_encode($data);
