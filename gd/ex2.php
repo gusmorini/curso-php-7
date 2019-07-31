@@ -12,12 +12,11 @@ imagestring($image, 3, 440, 370, "Concluido em: ".date("d/m/Y"), $titleColor);
 header("Content-Type: image/jpeg");
 
 //mostra a imagem na tela
-//imagejpeg($image);
+imagejpeg($image);
 
-//salva a imagem em disco sem mostrar
+//salva a imagem em disco
 //ultimo parametro é a qualidade da imagem de 1 a 100%
 imagejpeg($image, "certificado-".date("Y-m-d").".jpg", 80);
 
-echo "imagem salva";
 
 imagedestroy($image);
